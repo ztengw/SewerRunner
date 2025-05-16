@@ -1,0 +1,62 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+header{
+  background-color: #101211;
+  margin: auto;
+   width: 1000px;
+   height: 180px;;
+  padding: 10vh;  
+}
+
+h1{
+  font-family: 'MyCustomFont', truetype;
+  font-size: 8vh;
+  margin: 3vh auto 0 auto; /*10% of the viewport height */
+  color: aliceblue;
+  text-align: center;
+} 
+.image-margin-wrapper {
+  position: fixed; /* ensure it covers everything */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('bg/bg2.png');
+  background-size: cover;
+  background-position: center;
+  z-index: -1; /* put it behind everything */
+}
+
+
+
+canvas {
+  display: block;
+   margin: 5vh auto 0 auto; /*10% of the viewport height */
+  transform: scale(0.80); /* Shrinks canvas to 80% of original size */
+  transform-origin:top; /* Set where it shrinks from */
+}
+
+.box {
+  margin: auto;
+   width: 1000px;
+   height: 2000px;;
+  padding: 10vh;  /* 10% of viewport height top/bottom, 2% width left/right */
+  background-color: #101211;
+  display: flex;
+  
+}
+.box p{
+font-family: 'MyCustomFont', truetype;
+  font-size: 1.1vh;
+  margin: 85vh auto 0 auto; 
+  color: aliceblue;
+  text-align: left;
+}
+
+@font-face {
+  font-family: 'MyCustomFont';
+  src: url('font/PressStart2P-Regular.ttf') format('truetype'); /* Adjust path & format */
+}
